@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoHome - Wireframe Blocs</title>
+    <style>
+      :root {
+        --bg: #f6f2ea;
+        --frame: #fffdf8;
+        --line: #d7c8b2;
+        --text: #4a3f4f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px;
+        font-family: "Inter", "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .canvas {
+        display: grid;
+        gap: 32px;
+      }
+
+      .page {
+        width: 1440px;
+        min-height: 1024px;
+        background: var(--frame);
+        border: 2px solid var(--line);
+        border-radius: 24px;
+        padding: 20px;
+        display: grid;
+        gap: 14px;
+      }
+
+      .label {
+        font-size: 14px;
+        opacity: 0.75;
+      }
+
+      .block {
+        border: 2px dashed var(--line);
+        border-radius: 16px;
+        padding: 12px;
+        background: #ffffffa8;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .topbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+      }
+
+      .hero {
+        min-height: 320px;
+      }
+
+      .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 12px;
+      }
+
+      .house-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .room-card {
+        min-height: 280px;
+        display: grid;
+        grid-template-rows: 120px auto;
+        gap: 8px;
+      }
+
+      .room-head {
+        min-height: 112px;
+      }
+
+      .todo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .todo-card {
+        aspect-ratio: 2 / 3;
+        min-height: 360px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        gap: 8px;
+      }
+
+      .todo-lines {
+        display: grid;
+        gap: 6px;
+      }
+
+      .line {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        min-height: 26px;
+        background: #fff;
+      }
+    </style>
+    <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+  </head>
+  <body>
+    <div class="canvas">
+      <section class="page">
+        <div class="label">PAGE 1 - ACCUEIL</div>
+        <div class="topbar">
+          <div class="block">Logo ToDoHome</div>
+          <div class="block">Boutons Ma Maison / ToDo</div>
+          <div class="block">Actions (Micro / Refresh / Légendes)</div>
+        </div>
+        <div class="home-grid">
+          <div class="block hero">Grande image héro</div>
+          <div class="block hero">Bloc visuel secondaire</div>
+        </div>
+      </section>
+
+      <section class="page">
+        <div class="label">PAGE 2 - MA MAISON</div>
+        <div class="topbar">
+          <div class="block">Logo ToDoHome</div>
+          <div class="block">Boutons Ma Maison / ToDo</div>
+          <div class="block">Actions (Micro / Refresh / Légendes)</div>
+        </div>
+        <div class="block room-head">KPI / Résumé / Camembert</div>
+        <div class="house-grid">
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+          <div class="block room-card"><div>Image pièce</div><div>Infos + icônes tâches</div></div>
+        </div>
+      </section>
+
+      <section class="page">
+        <div class="label">PAGE 3 - TODO</div>
+        <div class="topbar">
+          <div class="block">Logo ToDoHome</div>
+          <div class="block">Boutons Ma Maison / ToDo</div>
+          <div class="block">Actions (Micro / Refresh / Légendes)</div>
+        </div>
+        <div class="block">Listes prêtes / Tâches récurrentes / Courses</div>
+        <div class="todo-grid">
+          <div class="block todo-card">
+            <div>TOD0 Bloc - Générale</div>
+            <div class="todo-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <div>...</div>
+          </div>
+          <div class="block todo-card">
+            <div>TOD0 Bloc - Benoit</div>
+            <div class="todo-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <div>...</div>
+          </div>
+          <div class="block todo-card">
+            <div>TOD0 Bloc - Camille</div>
+            <div class="todo-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <div>...</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
